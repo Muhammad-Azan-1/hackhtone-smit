@@ -1,0 +1,381 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter' , sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a{
+    text-decoration:none ;
+}
+
+h1,
+h2,
+h3,
+h4{
+    color:#4D4D4D;
+}
+
+:root{
+    --main-color:#4CAF4F;
+    --text-color:#717171;
+}
+
+.btn{
+    padding:12px 26px;
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 3px;
+            
+    }
+
+.text-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h1{
+            padding: 10px 0px;
+        }
+    }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    align-items:center;
+    height: 60px;
+
+    ul{
+        display: flex;
+        width: 570px;
+        justify-content: space-between;
+        align-items: center;
+        li a{
+            color: black;
+        }
+    }
+
+}
+
+
+main{
+     padding: 60px 80px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ 
+
+    .text-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+
+        p{
+            color:var(--text-color) ;
+        }
+
+        h1{
+            font-size: 40px;
+            line-height: 52.9px;
+        }
+
+        span{
+            color: var(--main-color);
+        }
+        .btn{
+            width: 120px;
+        }
+    }
+
+    .image{
+        display: flex;
+        justify-content:center;
+        align-items:center ;
+       img{ 
+        width: 400px;
+
+    }
+    }
+}
+
+
+.client{
+   
+   
+
+    .brands{
+         padding: 60px 80px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        width: 100%;
+          img{
+                width: 50px;
+                height: 50px;
+             }
+
+    }
+}
+
+.manage{
+    .text-box{
+        padding-top: 20px;
+    }
+
+    .manage-box{
+         padding: 60px 60px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+
+             h1{
+            font-size:20px ;
+        }
+
+        p{
+            font-size: 15px;
+            line-height: 20px;
+        }
+        }
+
+       
+
+    }
+}
+
+.unseen{
+    padding: 60px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .img-box{
+        img{
+            width: 500px;
+        }
+    }
+
+      .text-area-unseen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+
+        p{
+            color:var(--text-color) ;
+        }
+
+        h1{
+            font-size: 40px;
+            line-height: 52.9px;
+        }
+
+        span{
+            color: var(--main-color);
+        }
+        .btn{
+            width: 140px;
+        }
+    }
+}
+
+
+@media (max-width:1100px) {
+    main{
+             padding: 70px 50px;
+
+             .text-area h1{
+                    font-size: 35px;
+             }
+
+              .image img{ 
+             width: 350px;
+
+         }
+    }
+
+
+
+    nav{
+          padding: 0 50px;
+    }
+
+    .client{
+        .brands{
+             padding: 60px 50px;
+           
+        }
+    }
+
+
+     .manage{
+      
+        .manage-box{
+              gap: 30px;
+             padding: 70px 40px;
+        }
+    }
+
+    .unseen{
+           padding: 60px 50px;
+
+           img-box{
+            img{
+                width: 350px;
+            }
+           }
+            .text-area-unseen{
+                h1{
+                    font-size: 30px;
+                }
+            }
+    }
+}
+
+@media (max-width:900px) {
+    nav{
+        flex-direction: column;
+       
+        padding: 20px;
+        gap: 10px;
+        width: 100%;
+
+         ul{
+             justify-content: space-between;
+        
+        .btn{
+            padding:12px 18px;
+         
+
+        }
+    }
+    }
+
+
+}
+
+@media (max-width:800px) {
+        main{
+            padding: 80px 20px;
+            grid-template-columns: 1fr;
+            gap: 60px;
+
+            .text-area{
+                align-items: center;
+                text-align: center;
+             
+                h1{
+                line-height: normal;
+                }
+            }
+        }
+
+         .client{
+        .brands{
+             padding: 40px 20px;
+        }
+    }
+
+     .manage{
+      
+        .manage-box{
+            grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+              gap: 30px;
+             padding: 70px 40px;
+        }
+    }
+}   
+
+@media (max-width:600px){
+
+    main{
+           padding: 70px 20px;
+
+           .text-area h1{
+            font-size: 28px;
+           }
+    }
+    nav{
+         padding: 10px;
+    }
+    nav ul{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .client{
+        .brands {
+            img{
+                width: 40px;
+                height: 40px;
+             }
+        }
+    }
+
+    .manage{
+      
+        .manage-box{
+        
+             padding: 70px 20px;
+        }
+}
+}
+
+@media (max-width:500px){
+    nav{
+         padding: 10px;
+
+         ul{
+
+            li a{
+                font-size: 14px;
+            }
+            .btn{
+                display: none;
+            }
+         }
+    }
+     main{
+           padding: 70px 20px;
+
+           .text-area h1{
+            font-size: 25px;
+           }
+
+               .image img{ 
+             width: 300px;
+
+         }
+    }
+
+    .client{
+        .brands{
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            gap: 21px;
+            text-align: center;
+            img{
+                width: 40px;
+            }
+        }
+    }
+  
+}
